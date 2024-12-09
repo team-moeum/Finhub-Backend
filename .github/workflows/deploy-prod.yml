@@ -24,6 +24,10 @@ jobs:
           mkdir -p ./src/main/resources
           echo "${{ secrets.APPLICATION }}" > ./src/main/resources/application.yaml
 
+      - name: Generate sql File
+        run: |
+          echo "${{ secrets.SQL_DATA_DEV }}" > ./src/main/resources/data.sql
+
       - name: create-json
         id: create-json
         uses: jsdaniell/create-json@1.1.2
