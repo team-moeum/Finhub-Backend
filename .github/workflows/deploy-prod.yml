@@ -1,4 +1,4 @@
-name: Development Deployment
+name: Development Production
 env:
   AWS_REGION: ap-northeast-2
   ECR_REPOSITORY: finhub-backend
